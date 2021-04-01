@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Greeting from './Greeting';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <Greeting name='Microverse'/> 
         </a>
       </header>
     </div>
