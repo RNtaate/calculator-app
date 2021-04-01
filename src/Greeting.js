@@ -1,21 +1,23 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class Greeting extends Component {
-  render() {
-    return (
-      <h1>Hello {this.props.name}, I am happy to be here</h1>
-    );
-  }
-}
+const Greeting = (props) => {
+  const { name } = props;
+  return (
+    <h1>
+      Hello
+      {name}
+      , I am happy to be here
+    </h1>
+  );
+};
 
 Greeting.defaultProps = {
-  name: 'Gift'
-}
+  name: 'Gift',
+};
 
 Greeting.propTypes = {
-  name: PropTypes.string
-}
-
+  name: PropTypes.string,
+};
 
 export default Greeting;
