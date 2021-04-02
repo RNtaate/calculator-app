@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../App.css';
 import Greeting from './Greeting';
 
 function App() {
@@ -21,8 +21,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-          <Greeting name="Microverse" />
         </a>
+        <Greeting name="Microverse" />
       </header>
     </div>
   );
