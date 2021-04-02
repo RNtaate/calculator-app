@@ -1,9 +1,14 @@
 import React from 'react';
 
-let Display = () => {
+let Display = (props) => {
+  const {result} = props;
   return(
-    <input type="text"/>
+    <input type="text" value={result}/>
   );
+}
+
+Display.defaultProps = {
+  result: '0'
 }
 
 export default Display;
