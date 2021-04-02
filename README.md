@@ -1,5 +1,8 @@
 # Calculator-app
 
+![Linters](https://github.com/RNtaate/calculator-app/workflows/Linters/badge.svg)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)]()
+
 ## Project Description
 > A calculator web applications built with React.js
 
