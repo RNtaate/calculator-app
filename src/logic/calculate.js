@@ -1,4 +1,3 @@
-import Big from 'big.js';
 import operate from './operate';
 
 const calculate = (buttonName, calcData = { total: null, next: null, operation: null }) => {
@@ -28,9 +27,9 @@ const calculate = (buttonName, calcData = { total: null, next: null, operation: 
           myData.next = null;
           myData.operation = null;
         }
-        break; 
+        break;
       case '.':
-        if(myData.next.indexOf('.') < 0){
+        if (myData.next.indexOf('.') < 0) {
           myData.next += buttonName;
         }
         break;
