@@ -1,5 +1,5 @@
-import operate from './operate';
 import Big from 'big.js';
+import operate from './operate';
 
 const calculate = (buttonName, calcData = { total: null, next: null, operation: null }) => {
   const myData = { ...calcData };
@@ -8,8 +8,8 @@ const calculate = (buttonName, calcData = { total: null, next: null, operation: 
     myData.next = null;
     myData.operation = null;
   } else if (buttonName.match(/\d/)) {
-    if(myData.operation === null){
-      if(myData.total !== null) {
+    if (myData.operation === null) {
+      if (myData.total !== null) {
         myData.total = null;
       }
     }

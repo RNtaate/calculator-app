@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 class ButtonPanel extends Component {
@@ -9,18 +10,17 @@ class ButtonPanel extends Component {
   }
 
   handleClick(buttonName) {
-    this.props.clickHandler(buttonName);
+    const { clickHandler: myHandler } = this.props;
+    myHandler(buttonName);
   }
 
-
-  displayButton (myName) {
-    return(
-      <Button name={myName} clickHandler={this.handleClick}/>
-    )
+  displayButton(myName) {
+    return (
+      <Button name={myName} clickHandler={this.handleClick} />
+    );
   }
 
   render() {
-
     return (
       <div className="calculator-panel">
 
@@ -57,6 +57,10 @@ class ButtonPanel extends Component {
       </div>
     );
   }
+}
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
