@@ -1,4 +1,5 @@
 import operate from './operate';
+import Big from 'big.js';
 
 const calculate = (buttonName, calcData = { total: null, next: null, operation: null }) => {
   const myData = { ...calcData };
@@ -13,6 +14,7 @@ const calculate = (buttonName, calcData = { total: null, next: null, operation: 
       }
     }
     myData.next = myData.next === null ? buttonName : myData.next + buttonName;
+    myData.next = new Big(myData.next).toNumber().toString();
   } else if (myData.next !== null) {
     switch (buttonName) {
       case '%':
