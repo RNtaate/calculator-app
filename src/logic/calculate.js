@@ -14,7 +14,6 @@ const calculate = (buttonName, calcData = { total: null, next: null, operation: 
       }
     }
     myData.next = myData.next === null ? buttonName : myData.next + buttonName;
-    myData.next = new Big(myData.next).toNumber().toString();
   } else if (myData.next !== null) {
     switch (buttonName) {
       case '%':
@@ -29,8 +28,12 @@ const calculate = (buttonName, calcData = { total: null, next: null, operation: 
           myData.next = null;
           myData.operation = null;
         }
+        break; 
+      case '.':
+        if(myData.next.indexOf('.') < 0){
+          myData.next += buttonName;
+        }
         break;
-
       default:
         if (myData.total === null) {
           myData.total = myData.next;
@@ -53,6 +56,10 @@ const calculate = (buttonName, calcData = { total: null, next: null, operation: 
           break;
         case '=':
           myData.total = myData.total.toString();
+          break;
+        case '.':
+          myData.total = null;
+          myData.next = '0.';
           break;
         default:
           myData.operation = buttonName;
