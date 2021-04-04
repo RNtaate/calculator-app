@@ -7,7 +7,7 @@ const calculate = (buttonName, calcData = { total: null, next: null, operation: 
     myData.next = null;
     myData.operation = null;
   } else if (buttonName.match(/\d/)) {
-    myData.next = myData.next === null ? '' : myData.next + buttonName;
+    myData.next = myData.next === null ? buttonName : myData.next + buttonName;
   } else if (myData.next !== null) {
     switch (buttonName) {
       case '%':
