@@ -1,46 +1,66 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = () => {
-  const displayButton = (myName) => (
-    <Button name={myName} />
-  );
+class ButtonPanel extends Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <div className="calculator-panel">
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-      <div className="group1">
-        {displayButton('AC')}
-        {displayButton('+/-')}
-        {displayButton('%')}
-        {displayButton('÷')}
-      </div>
-      <div className="group2">
-        {displayButton('7')}
-        {displayButton('8')}
-        {displayButton('9')}
-        {displayButton('X')}
-      </div>
-      <div className="group3">
-        {displayButton('4')}
-        {displayButton('5')}
-        {displayButton('6')}
-        {displayButton('-')}
-      </div>
-      <div className="group4">
-        {displayButton('1')}
-        {displayButton('2')}
-        {displayButton('3')}
-        {displayButton('+')}
-      </div>
-      <div className="group5">
-        {displayButton('0')}
-        {displayButton('.')}
-        {displayButton('=')}
-      </div>
+  handleClick(buttonName) {
+    const { clickHandler: myHandler } = this.props;
+    myHandler(buttonName);
+  }
 
-    </div>
-  );
+  displayButton(myName) {
+    return (
+      <Button name={myName} clickHandler={this.handleClick} />
+    );
+  }
+
+  render() {
+    return (
+      <div className="calculator-panel">
+
+        <div className="group1">
+          {this.displayButton('AC')}
+          {this.displayButton('+/-')}
+          {this.displayButton('%')}
+          {this.displayButton('÷')}
+        </div>
+        <div className="group2">
+          {this.displayButton('7')}
+          {this.displayButton('8')}
+          {this.displayButton('9')}
+          {this.displayButton('X')}
+        </div>
+        <div className="group3">
+          {this.displayButton('4')}
+          {this.displayButton('5')}
+          {this.displayButton('6')}
+          {this.displayButton('-')}
+        </div>
+        <div className="group4">
+          {this.displayButton('1')}
+          {this.displayButton('2')}
+          {this.displayButton('3')}
+          {this.displayButton('+')}
+        </div>
+        <div className="group5">
+          {this.displayButton('0')}
+          {this.displayButton('.')}
+          {this.displayButton('=')}
+        </div>
+
+      </div>
+    );
+  }
+}
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
