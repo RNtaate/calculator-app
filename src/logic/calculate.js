@@ -12,7 +12,14 @@ const calculate = (buttonName, calcData = { total: null, next: null, operation: 
         myData.total = null;
       }
     }
-    myData.next = myData.next === null ? buttonName : myData.next + buttonName;
+
+    if (myData.next === null) {
+      myData.next = buttonName;
+    } else if ((myData.next.length === 1) && myData.next[0] === '0') {
+      myData.next = buttonName;
+    } else {
+      myData.next += buttonName;
+    }
   } else if (myData.next !== null) {
     switch (buttonName) {
       case '%':
