@@ -17,7 +17,7 @@
 
 ## 🔴 Live Demo
 
-[LIVE](https://norp-calculator-app.herokuapp.com/)
+- Coming Soon!
 
 ## Get started
 ### Prerequisites
