@@ -4,11 +4,11 @@
 [![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)]()
 
 ## Project Description
-> A calculator web applications built with React.js
+> A calculator web application built with React.js
 
-### Screenshots
+### Screenshot
 
-- Coming soon
+![](/images/calculator-react.png)
 
 ##  🔧 Built with
 
