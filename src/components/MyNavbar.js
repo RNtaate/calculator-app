@@ -2,13 +2,16 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 let MyNavbar = () => {
+  let myColor = {
+    color: "#0275d8"
+  }
   return (
     <div className="navbar-div">
       <h1>Math Magicians</h1>
       <div className="links-div">
-        <Link to="/">Home</Link>
-        <Link to="/calculator">Calculator</Link>
-        <Link to="/quote">Quote</Link>
+        <Link to="/" style={{color: myColor.color}}>Home</Link>
+        <Link to="/calculator" style={{color: myColor.color}}>Calculator</Link>
+        <Link to="/quote" style={{color: myColor.color}}>Quote</Link>
       </div>
     </div>
   );
