@@ -9,7 +9,7 @@ const Button = (props) => {
   };
 
   return (
-    <button type="button" onClick={handleClick} value={name}  style={{ backgroundColor: color ? color : '', width: wide ? "50%" : "25%" }}>{name}</button>
+    <button type="button" onClick={handleClick} value={name} style={{ backgroundColor: color || '', width: wide ? '50%' : '25%' }}>{name}</button>
   );
 };
 
@@ -20,6 +20,8 @@ Button.defaultProps = {
 Button.propTypes = {
   name: PropTypes.string,
   clickHandler: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
+  wide: PropTypes.bool.isRequired,
 };
 
 export default Button;

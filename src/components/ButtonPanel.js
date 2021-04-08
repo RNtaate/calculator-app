@@ -9,7 +9,7 @@ const ButtonPanel = (props) => {
   };
 
   const displayButton = (myName, myColor = null, myWide = false) => (
-    <Button name={myName} clickHandler={handleClick} color={myColor} wide={myWide}/>
+    <Button name={myName} clickHandler={handleClick} color={myColor} wide={myWide} />
   );
 
   return (

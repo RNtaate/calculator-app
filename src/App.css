@@ -1,5 +1,5 @@
 *,
-*::after, 
+*::after,
 *::before {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -22,7 +22,7 @@
   color: white;
   width: 700px;
   height: 100px;
-  border:none;
+  border: none;
   outline: none;
   font-size: 60px;
   font-weight: bold;
@@ -48,5 +48,5 @@
   font-size: 25px;
   font-weight: bold;
   border: 1px solid #999;
-  background-color: #FF893C;
+  background-color: #ff893c;
 }
