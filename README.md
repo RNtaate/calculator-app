@@ -6,9 +6,9 @@
 ## Project Description
 > A calculator web applications built with React.js
 
-### Screenshots
+### Screenshot
 
-- Coming soon
+![](/images/calculator-react.png)
 
 ##  🔧 Built with
 
