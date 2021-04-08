@@ -34,10 +34,10 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="main-div">
       <Display result={updateDisplayResult()} />
       <ButtonPanel clickHandler={handleClick} />
-    </>
+    </div>
   );
 };
 
