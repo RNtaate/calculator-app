@@ -8,9 +8,30 @@
   margin: 0;
 }
 
+.navbar-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-div > h1 {
+  font-size: 50px;
+}
+
+.links-div {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
 .main-div {
   background-color: #123456;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
