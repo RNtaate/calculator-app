@@ -11,7 +11,9 @@ const RouteComp = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/calculator" component={App} />
-      <Route exact path="/quote" component={Quote} />
+      <Route exact path="/quote" render={(props) =>(
+        <Quote { ...props }/>
+      ) } />
     </Switch>
   </BrowserRouter>
 );
