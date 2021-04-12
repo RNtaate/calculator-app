@@ -23,7 +23,7 @@ test('it should return a value of type object', () => {
   expect(typeof newData).toBe('object');
 });
 
-test('returns an object with calculated property values basing on buttonName provided as argument', () => {
+test('returns an object with calculated property values basing on the first argument.', () => {
   let newData = calculate('3', myData);
   expect(newData.next).toBe('3');
   expect(newData.next).not.toBeNull();
@@ -44,7 +44,7 @@ test('returns an object with calculated property values basing on buttonName pro
   expect(newData.operation).toBeNull();
 });
 
-test('Should make simple mathematics calculations with +, -, X, ÷ symbols', () => {
+test('Should make simple mathematics calculations with +, -, X, ÷ operators', () => {
   let newData;
   myData.total = '10';
   myData.next = '5';
@@ -66,7 +66,7 @@ test('Should make simple mathematics calculations with +, -, X, ÷ symbols', () 
   expect(newData.total).toBe('2');
 });
 
-test('Should set all the values of the returned object to null if provied AC as buttonName.', () => {
+test('Should set all the values of the returned object to null if provied AC as first argument', () => {
   myData.total = '10';
   myData.next = '5';
   myData.operation = '+';
@@ -77,7 +77,7 @@ test('Should set all the values of the returned object to null if provied AC as 
   expect(newData.operation).toBeNull();
 });
 
-test("Should update the returned object's total or next property value to positive or negative if given '+/-' symbol as buttonName", () => {
+test("Should turn the returned object's total or next property value to positive or negative if given '+/-' symbol as first argument", () => {
   let newData;
   myData.total = '10';
   myData.next = null;
@@ -99,7 +99,29 @@ test("Should update the returned object's total or next property value to positi
   expect(newData.total).not.toBe('-30');
 });
 
-test('Should update the value of the next property in the returned object into a decimal number if given "." symbol as buttonName', () => {
+test("Should turn the returned object's total or next property value to percentage if given '%' operator as first argument", () => {
+  let newData;
+  myData.total = '200';
+  myData.next = null;
+  myData.operation = null;
+
+  newData = calculate('%', myData);
+  expect(newData.total).toBe('2');
+
+  myData.next = '500';
+  myData.operation = '+';
+  newData = calculate('%', myData);
+  expect(newData.next).toBe('5');
+
+  myData.next = null;
+  myData.operation = '+';
+  myData.total = '300';
+  newData = calculate('%', myData);
+  expect(newData.total).toBe('300');
+  expect(newData.total).not.toBe('3');
+});
+
+test('Should turn the value of the next property in the returned object into a decimal number if given "." symbol as first argument', () => {
   myData.total = null;
   myData.next = '34';
   myData.operation = null;
