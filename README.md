@@ -37,6 +37,10 @@
 
 1. Run `npm start` to start the application on a local server
 
+## Testing the project
+
+1. In your terminal, run `npm test`
+
 
 ## 🤝 Contributions
   There are two ways of contributing to this project:
