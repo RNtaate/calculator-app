@@ -45,35 +45,33 @@ test('returns an object with calculated property values basing on buttonName pro
 });
 
 test('Should make simple mathematics calculations with +, -, X, ÷ symbols', () => {
-
   let newData;
   myData.total = '10';
   myData.next = '5';
 
-  myData.operation = "+";
-  newData = calculate("=", myData);
+  myData.operation = '+';
+  newData = calculate('=', myData);
   expect(newData.total).toBe('15');
 
-  myData.operation = "-";
-  newData = calculate("=", myData);
+  myData.operation = '-';
+  newData = calculate('=', myData);
   expect(newData.total).toBe('5');
 
-  myData.operation = "X";
-  newData = calculate("=", myData);
+  myData.operation = 'X';
+  newData = calculate('=', myData);
   expect(newData.total).toBe('50');
 
-  myData.operation = "÷";
-  newData = calculate("=", myData);
+  myData.operation = '÷';
+  newData = calculate('=', myData);
   expect(newData.total).toBe('2');
 });
 
-test ('Should set all the values of the returned object to null if provied AC as buttonName.', () => {
-  let newData;
+test('Should set all the values of the returned object to null if provied AC as buttonName.', () => {
   myData.total = '10';
   myData.next = '5';
-  myData.operation = "+";
+  myData.operation = '+';
 
-  newData = calculate("AC", myData);
+  const newData = calculate('AC', myData);
   expect(newData.total).toBeNull();
   expect(newData.next).toBeNull();
   expect(newData.operation).toBeNull();
@@ -85,21 +83,21 @@ test("Should update the returned object's total or next property value to positi
   myData.next = null;
   myData.operation = null;
 
-  newData = calculate("+/-", myData);
+  newData = calculate('+/-', myData);
   expect(newData.total).toBe('-10');
 
   myData.next = '5';
   myData.operation = '+';
-  newData = calculate("+/-", myData);
+  newData = calculate('+/-', myData);
   expect(newData.next).toBe('-5');
 
   myData.next = null;
-  myData.operation = "+";
-  myData.total = "30";
-  newData = calculate("+/-", myData);
-  expect(newData.total).toBe("30");
-  expect(newData.total).not.toBe("-30");
-})
+  myData.operation = '+';
+  myData.total = '30';
+  newData = calculate('+/-', myData);
+  expect(newData.total).toBe('30');
+  expect(newData.total).not.toBe('-30');
+});
 
 test('Should update the value of the next property in the returned object into a decimal number if given "." symbol as buttonName', () => {
   myData.total = null;
@@ -107,26 +105,26 @@ test('Should update the value of the next property in the returned object into a
   myData.operation = null;
 
   let newData;
-  newData = calculate(".", myData);
-  expect(newData.next).toBe("34.");
+  newData = calculate('.', myData);
+  expect(newData.next).toBe('34.');
 
-  myData.total = "60";
+  myData.total = '60';
   myData.next = null;
-  myData.operation = "+";
-  newData = calculate(".", myData);
-  expect(newData.total).not.toBe("60.");
+  myData.operation = '+';
+  newData = calculate('.', myData);
+  expect(newData.total).not.toBe('60.');
 
-  myData.total = "700";
+  myData.total = '700';
   myData.next = null;
   myData.operation = null;
-  newData = calculate(".", myData);
-  expect(newData.total).not.toBe("700.");
+  newData = calculate('.', myData);
+  expect(newData.total).not.toBe('700.');
   expect(newData.total).toBeNull();
   expect(newData.next).toBe('0.');
 
-  myData.next = "600.7";
-  myData.operation = "+";
-  newData = calculate(".", myData);
-  expect(newData.next).not.toBe("600.7.");
-  expect(newData.next).toBe("600.7");
-})
+  myData.next = '600.7';
+  myData.operation = '+';
+  newData = calculate('.', myData);
+  expect(newData.next).not.toBe('600.7.');
+  expect(newData.next).toBe('600.7');
+});
