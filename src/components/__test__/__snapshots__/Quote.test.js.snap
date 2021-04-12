@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<p
+  className="quote-par"
+  data-testid="quote"
+  style={
+    Object {
+      "fontSize": "25px",
+      "padding": "20px 100px",
+    }
+  }
+>
+  This will be passed to quote
+</p>
+`;
+
+exports[`matches snapshot 2`] = `
+<p
+  className="quote-par"
+  data-testid="quote"
+  style={
+    Object {
+      "fontSize": "25px",
+      "padding": "20px 100px",
+    }
+  }
+>
+  Mathematics is not about numbers, equations, computations,or algorithms: it is about understanding. –William Paul Thurston
+</p>
+`;

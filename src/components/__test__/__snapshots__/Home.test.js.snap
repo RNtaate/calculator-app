@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It matches Home component snaphsot 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <h2
+    style={
+      Object {
+        "fontSize": "35px",
+        "padding": "20px 0",
+      }
+    }
+  >
+    Welcome to our page!
+  </h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi doloribus necessitatibus, sint, quod repellendus tempora cupiditate libero, voluptatum similique reprehenderit eius? Earum asperiores quo alias id animi, perferendis corrupti!
+  </p>
+  <br />
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi doloribus necessitatibus, sint, quod repellendus tempora cupiditate libero, voluptatum similique reprehenderit eius? Earum asperiores quo alias id animi, perferendis corrupti!
+  </p>
+</div>
+`;

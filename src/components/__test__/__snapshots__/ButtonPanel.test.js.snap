@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the Button panel component snapshot 1`] = `
+<div
+  className="calculator-panel"
+>
+  <div
+    className="group1"
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="AC"
+    >
+      AC
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="+/-"
+    >
+      +/-
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="%"
+    >
+      %
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="÷"
+    >
+      ÷
+    </button>
+  </div>
+  <div
+    className="group2"
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="7"
+    >
+      7
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="8"
+    >
+      8
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="9"
+    >
+      9
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="X"
+    >
+      X
+    </button>
+  </div>
+  <div
+    className="group3"
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="4"
+    >
+      4
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="5"
+    >
+      5
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="6"
+    >
+      6
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="-"
+    >
+      -
+    </button>
+  </div>
+  <div
+    className="group4"
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="1"
+    >
+      1
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="2"
+    >
+      2
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="3"
+    >
+      3
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="+"
+    >
+      +
+    </button>
+  </div>
+  <div
+    className="group5"
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "50%",
+        }
+      }
+      type="button"
+      value="0"
+    >
+      0
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="."
+    >
+      .
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "",
+          "width": "25%",
+        }
+      }
+      type="button"
+      value="="
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
