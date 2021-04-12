@@ -17,7 +17,7 @@ Button.defaultProps = {
   name: '',
   color: '',
   clickHandler: () => {},
-  wide: false
+  wide: false,
 };
 
 Button.propTypes = {
