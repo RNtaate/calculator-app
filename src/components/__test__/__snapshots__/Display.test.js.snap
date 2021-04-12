@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the Display component snapshot 1`] = `
+<input
+  className="display-input"
+  readOnly={true}
+  style={
+    Object {
+      "textAlign": "right",
+    }
+  }
+  type="text"
+  value="0"
+/>
+`;
+
+exports[`matches the Display component snapshot 2`] = `
+<input
+  className="display-input"
+  readOnly={true}
+  style={
+    Object {
+      "textAlign": "right",
+    }
+  }
+  type="text"
+  value="1994"
+/>
+`;
