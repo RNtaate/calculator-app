@@ -17,7 +17,7 @@
 
 ## 🔴 Live Demo
 
-- [Live Demo](https://norp-calculator-app.herokuapp.com/)
+- [Live Demo](https://norp-calculator.netlify.app)
 
 ## Get started
 ### Prerequisites
