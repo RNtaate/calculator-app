@@ -70,6 +70,20 @@ const calculate = (buttonName, calcData = { total: null, next: null, operation: 
         default:
           myData.operation = buttonName;
       }
+    } else {
+      switch (buttonName) {
+        case '.':
+          myData.next = '0.';
+          break;
+        default:
+      }
+    }
+  } else {
+    switch (buttonName) {
+      case '.':
+        myData.next = '0.';
+        break;
+      default:
     }
   }
 
