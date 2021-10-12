@@ -2,6 +2,7 @@
 
 ![Linters](https://github.com/RNtaate/calculator-app/workflows/Linters/badge.svg)
 [![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)]()
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cc75904e-c735-4149-9aa0-9c9afd6caebd/deploy-status)](https://app.netlify.com/sites/norp-calculator/deploys)
 
 ## Project Description
 > A calculator web application built with React.js
